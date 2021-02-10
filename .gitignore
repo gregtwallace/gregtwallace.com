@@ -1,3 +1,4 @@
 _hosted_files/
-_include/scripts/
+_include/scripts/connect_local_mysql.php
+_include/scripts/credentials/
 **/.htaccess
