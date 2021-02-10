@@ -169,17 +169,19 @@
       }
 
       function checkForWin(player) {
-        if ( pieces[0][2] + pieces[1][2] + pieces[2][2] == player + player + player ||  // top row
-             pieces[3][2] + pieces[4][2] + pieces[5][2] == player + player + player ||  // middle row
-             pieces[6][2] + pieces[7][2] + pieces[8][2] == player + player + player ||  // bottom row
+        var winConditions = [
+          [0, 1, 2], // rows
+          [3, 4, 5],
+          [6, 7, 8],
+          [0, 3, 6], // cols
+          [1, 4, 7],
+          [2, 5, 8],
+          [0, 4, 8], // diags
+          [2, 4, 6]
+        ];
 
-             pieces[0][2] + pieces[3][2] + pieces[6][2] == player + player + player ||  // left col
-             pieces[1][2] + pieces[4][2] + pieces[7][2] == player + player + player ||  // middle col
-             pieces[2][2] + pieces[5][2] + pieces[8][2] == player + player + player ||  // right col
-
-             pieces[0][2] + pieces[4][2] + pieces[8][2] == player + player + player ||  // top left diag
-             pieces[2][2] + pieces[4][2] + pieces[6][2] == player + player + player     // top right diag
-        ) {
+        for  (i = 0; i < winConditions.length; i++) {
+          if ( player == pieces[winConditions[i][0]][2] && pieces[winConditions[i][0]][2] == pieces[winConditions[i][1]][2] && pieces[winConditions[i][1]][2] == pieces[winConditions[i][2]][2] ) {
             document.getElementById("gamestatus").innerHTML = player + " has Won!";
             document.getElementById("gamestatus").style.fontWeight = "bold";
             if (player == "X") {
@@ -190,7 +192,9 @@
             }
             gameOver = true;
             return true;
+          }
         }
+
         return false;
       }
 
