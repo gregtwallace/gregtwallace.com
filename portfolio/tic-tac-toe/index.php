@@ -110,14 +110,6 @@
         halfPieceXIncrement = ((gameboard.clientWidth - (boardPadding * 2)) / 6);
         halfPieceYIncrement = ((gameboard.clientHeight - (boardPadding * 2)) / 6);
 
-        function circleCenterX(col) {
-          return halfPieceXIncrement * (col * 2 + 1) + boardPadding;
-        }
-
-        function circleCenterY(row) {
-          return halfPieceYIncrement * (row * 2 + 1) + boardPadding;
-        }
-
         // Board Layout
         //  0,0 | 0,1 | 0,2
         // -----------
