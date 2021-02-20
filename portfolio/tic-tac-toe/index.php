@@ -18,7 +18,7 @@
       <h1 class="m-1" id="gametitle">Tic-Tac-Toe</h1>
       <p>A basic implmentation of Tic-Tac-Toe that I wrote in javascript.</p>
       <canvas id="gameboard" class="m-0 p-0"></canvas>
-      <h2 id="gamestatus"></h3>
+      <h2 id="gamestatus"></h2>
       <button id="restart-button" class="btn btn-primary">Restart Game</button>
     </div>
 
