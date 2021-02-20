@@ -83,10 +83,11 @@
 
       // define game vars in global scope before using function to set (we'll reuse the same vars in subsequent games)
       var boardSquares;
-      var pieces;
       var playerTurn;
       var movesMade;
       var gameOver;
+      var halfPieceXIncrement;
+      var halfPieceYIncrement;
 
       function setPlayerTurn(player) {
         document.getElementById("gamestatus").innerHTML = player + "'s Turn";
@@ -105,83 +106,88 @@
         movesMade = 0;
         gameOver = false;
 
-        // create array for game pieces & board
-          // Array Layout re: board
-          //  0 | 1 | 2
-          // -----------
-          //  3 | 4 | 5
-          // -----------
-          //  6 | 7 | 8
-
-        // boardSquares[x-val][y-val]
-        boardSquares = [
-          [0, 3, 6],
-          [1, 4, 7],
-          [2, 5, 8]
-        ]
-
         // spacing for the pieces
         halfPieceXIncrement = ((gameboard.clientWidth - (boardPadding * 2)) / 6);
         halfPieceYIncrement = ((gameboard.clientHeight - (boardPadding * 2)) / 6);
 
-        // array to contain the pieces and info about them
-          // [0] x-coord for circle center
-          // [1] y-coord for circle center
-          // [2] piece in the space
-        pieces = [
-          [halfPieceXIncrement * 1 + boardPadding, halfPieceYIncrement * 1 + boardPadding, ""],
-          [halfPieceXIncrement * 3 + boardPadding, halfPieceYIncrement * 1 + boardPadding, ""],
-          [halfPieceXIncrement * 5 + boardPadding, halfPieceYIncrement * 1 + boardPadding, ""],
+        function circleCenterX(col) {
+          return halfPieceXIncrement * (col * 2 + 1) + boardPadding;
+        }
 
-          [halfPieceXIncrement * 1 + boardPadding, halfPieceYIncrement * 3 + boardPadding, ""],
-          [halfPieceXIncrement * 3 + boardPadding, halfPieceYIncrement * 3 + boardPadding, ""],
-          [halfPieceXIncrement * 5 + boardPadding, halfPieceYIncrement * 3 + boardPadding, ""],
+        function circleCenterY(row) {
+          return halfPieceYIncrement * (row * 2 + 1) + boardPadding;
+        }
 
-          [halfPieceXIncrement * 1 + boardPadding, halfPieceYIncrement * 5 + boardPadding, ""],
-          [halfPieceXIncrement * 3 + boardPadding, halfPieceYIncrement * 5 + boardPadding, ""],
-          [halfPieceXIncrement * 5 + boardPadding, halfPieceYIncrement * 5 + boardPadding, ""]
-        ];
+        // Board Layout
+        //  0,0 | 0,1 | 0,2
+        // -----------
+        //  1,0 | 1,1 | 1,2
+        // -----------
+        //  2,0 | 2,1 | 2,2
+
+        // boardSquares[x-val][y-val][X]
+        //  X =
+        //    0 piece in the space
+        //    1 x-coord for circle center
+        //    2 y-coord for circle center
+
+        // to-do later if I make the board bigger or something
+        var boardRows = 3;
+        var boardCols = 3;
+
+        boardSquares = [];
+        for (i=0; i < boardRows; i++) {
+          boardSquares[i] = [];
+          for (j=0; j < boardCols; j++) {
+            boardSquares[i][j] = [];
+            boardSquares[i][j][0] = "";
+            boardSquares[i][j][1] = halfPieceXIncrement * (i * 2 + 1) + boardPadding;
+            boardSquares[i][j][2] = halfPieceYIncrement * (j * 2 + 1) + boardPadding;
+          }
+        }
 
       }
 
-      function placeX(pieceLocation) {
+      function placeX(row, col) {
         context.beginPath();
         // top left to bottom right line
-        context.moveTo(pieces[pieceLocation][0] - halfPieceXIncrement + piecePadding, pieces[pieceLocation][1] - halfPieceYIncrement + piecePadding);
-        context.lineTo(pieces[pieceLocation][0] + halfPieceXIncrement - piecePadding, pieces[pieceLocation][1] + halfPieceYIncrement - piecePadding)
+        context.moveTo(boardSquares[row][col][1] - halfPieceXIncrement + piecePadding, boardSquares[row][col][2] - halfPieceYIncrement + piecePadding);
+        context.lineTo(boardSquares[row][col][1] + halfPieceXIncrement - piecePadding, boardSquares[row][col][2] + halfPieceYIncrement - piecePadding)
         // bottom left to top right line
-        context.moveTo(pieces[pieceLocation][0] - halfPieceXIncrement + piecePadding, pieces[pieceLocation][1] + halfPieceYIncrement - piecePadding);
-        context.lineTo(pieces[pieceLocation][0] + halfPieceXIncrement - piecePadding, pieces[pieceLocation][1] - halfPieceYIncrement + piecePadding)
+        context.moveTo(boardSquares[row][col][1] - halfPieceXIncrement + piecePadding, boardSquares[row][col][2] + halfPieceYIncrement - piecePadding);
+        context.lineTo(boardSquares[row][col][1] + halfPieceXIncrement - piecePadding, boardSquares[row][col][2] - halfPieceYIncrement + piecePadding)
 
         context.lineWidth = lineWidth;
         context.strokeStyle = 'blue';
         context.stroke();
-        pieces[pieceLocation][2] = "X";
+        boardSquares[row][col][0] = "X";
       }
 
-      function placeO(pieceLocation) {
+      function placeO(row, col) {
         context.beginPath();
-        context.ellipse(pieces[pieceLocation][0], pieces[pieceLocation][1], (halfPieceXIncrement - piecePadding), (halfPieceYIncrement - piecePadding), 0, 0, 2 * Math.PI);
+        context.ellipse(boardSquares[row][col][1], boardSquares[row][col][2], (halfPieceXIncrement - piecePadding), (halfPieceYIncrement - piecePadding), 0, 0, 2 * Math.PI);
         context.lineWidth = lineWidth;
         context.strokeStyle = 'red';
         context.stroke();
-        pieces[pieceLocation][2] = "O";
+        boardSquares[row][col][0] = "O";
       }
 
       function checkForWin(player) {
         var winConditions = [
-          [0, 1, 2], // rows
-          [3, 4, 5],
-          [6, 7, 8],
-          [0, 3, 6], // cols
-          [1, 4, 7],
-          [2, 5, 8],
-          [0, 4, 8], // diags
-          [2, 4, 6]
+          [[0,0], [0,1], [0,2]], // rows
+          [[1,0], [1,1], [1,2]],
+          [[2,0], [2,1], [2,2]],
+          [[0,0], [1,0], [2,0]], // cols
+          [[0,1], [1,1], [2,1]],
+          [[0,2], [1,2], [2,2]],
+          [[0,0], [1,1], [2,2]], // diags
+          [[2,0], [1,1], [0,2]]
         ];
 
         for  (i = 0; i < winConditions.length; i++) {
-          if ( player == pieces[winConditions[i][0]][2] && pieces[winConditions[i][0]][2] == pieces[winConditions[i][1]][2] && pieces[winConditions[i][1]][2] == pieces[winConditions[i][2]][2] ) {
+          if ( player == boardSquares[winConditions[i][0][0]][winConditions[i][0][1]][0] &&
+               boardSquares[winConditions[i][0][0]][winConditions[i][0][1]][0] == boardSquares[winConditions[i][1][0]][winConditions[i][1][1]][0] &&
+               boardSquares[winConditions[i][1][0]][winConditions[i][1][1]][0] == boardSquares[winConditions[i][2][0]][winConditions[i][2][1]][0] ) {
             document.getElementById("gamestatus").innerHTML = player + " has Won!";
             document.getElementById("gamestatus").style.fontWeight = "bold";
             if (player == "X") {
@@ -209,18 +215,18 @@
         var clickLeft = event.clientX - gameboardRect.left;
         var clickTop = event.clientY - gameboardRect.top;
 
-        var xLocation;
-        var yLocation;
+        var row;
+        var col;
 
         // determine col of clicked square
         if (( clickLeft > halfPieceXIncrement * 0 + boardPadding ) && (clickLeft < halfPieceXIncrement * 2 + boardPadding - (lineWidth / 2) )) {
-          xLocation = 0;
+          row = 0;
         }
         else if (( clickLeft > halfPieceXIncrement * 2 + boardPadding + (lineWidth / 2) ) && (clickLeft < halfPieceXIncrement * 4 + boardPadding - (lineWidth / 2) )) {
-          xLocation = 1;
+          row = 1;
         }
         else if (( clickLeft > halfPieceXIncrement * 4 + boardPadding + (lineWidth / 2) ) && (clickLeft < halfPieceXIncrement * 6 + boardPadding - (lineWidth / 2) )) {
-          xLocation = 2;
+          row = 2;
         }
         else {
           return;
@@ -228,29 +234,28 @@
 
         // determine row of clicked square
         if (( clickTop > halfPieceYIncrement * 0 + boardPadding ) && (clickTop < halfPieceYIncrement * 2 + boardPadding - (lineWidth / 2) )) {
-          yLocation = 0;
+          col = 0;
         }
         else if (( clickTop > halfPieceYIncrement * 2 + boardPadding + (lineWidth / 2) ) && (clickTop < halfPieceYIncrement * 4 + boardPadding - (lineWidth / 2) )) {
-          yLocation = 1;
+          col = 1;
         }
         else if (( clickTop > halfPieceYIncrement * 4 + boardPadding + (lineWidth / 2) ) && (clickTop < halfPieceYIncrement * 6 + boardPadding - (lineWidth / 2) )) {
-          yLocation = 2;
+          col = 2;
         }
         else {
           return;
         }
 
-        var clickedSquare = boardSquares[xLocation][yLocation];
-        var pieceInSquare = pieces[clickedSquare][2];
+        var pieceInSquare = boardSquares[row][col][0];
 
         if ( pieceInSquare == "" ) {
           if ( playerTurn == "X" ) {
-            placeX(clickedSquare);
+            placeX(row, col);
             movesMade += 1;
             setPlayerTurn("O");
           }
           else if ( playerTurn == "O") {
-            placeO(clickedSquare);
+            placeO(row, col);
             movesMade += 1;
             setPlayerTurn("X");
           }
@@ -285,11 +290,4 @@
     <?php $path = $_SERVER['DOCUMENT_ROOT']; $path .= "/_include/page_components/footer.html"; include_once($path); ?>
 
   </body>
-</html>
-
-
-
-
-
-
 </html>
