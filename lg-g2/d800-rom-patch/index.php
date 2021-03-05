@@ -129,106 +129,18 @@
         <table class="table table-striped">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">File</th>
               <th scope="col">Mirror</th>
-              <th scope="col">MD5</th>
-              <th scope="col">Downloads</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <th scope="row">ROM Patch (30D) Version 1.5</th>
               <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=ROM-patch-v1.5-lp30f-d800-blastagator-signed.zip&type=rom_patch&version=d800_lp" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=ROM-patch-v1.5-lp30f-d800-blastagator-signed.zip&type=rom_patch&version=d800_lp" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="93130a4d6df39bc0a0dfc6c9b067a075">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=ROM-patch-v1.5-lp30f-d800-blastagator-signed.zip.md5&type=rom_patch&version=d800_lp" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "ROM-patch-v1.5-lp30f-d800-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
+                <a class="btn btn-sm btn-primary" href="https://u.pcloud.link/publink/show?code=kZ5TSfXZSb2xwyuae6uH5wUlRg5AuLkS9Ooy" target="_blank" role="button">pCloud</a>
               </td>
             </tr>
-
-            <tr>
-              <th scope="row">Dorimanx LP Kernel (Recommended!)</th>
-              <td>
-                <a class="btn btn-sm btn-info mr-1 mb-1" href="https://www.dorimanx.com/LG-LP/" target="_blank" role="button">Downloads</a> <!--need space-->
-                <a class="btn btn-sm btn-info mr-1 mb-1" href="https://forum.xda-developers.com/lg-g2/development/lp-5-0-2-kernel-3-4-107-dorimanx-1-0-lg-t3102512" target="_blank" role="button">XDA</a>
-              </td>
-              <td>
-
-              </td>
-              <td>
-
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">SELinux Context Fixer (for LP ROM) <a href="#download-note-1"><sup>Note 1</sup></a></th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=selinux-context-fix-LP-v1.4-d800-blastagator-signed.zip&type=rom_patch&version=d800_lp" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=selinux-context-fix-LP-v1.4-d800-blastagator-signed.zip&type=rom_patch&version=d800_lp" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="65cd156351341e6ded1b247bb49a2da7">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=selinux-context-fix-LP-v1.4-d800-blastagator-signed.zip.md5&type=rom_patch&version=d800_lp" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "selinux-context-fix-LP-v1.4-d800-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">Stock 30f Boot Image (Enforcing)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=boot-enforcing-lp30f-d800-blastagator-signed.zip&type=rom_patch&version=d800_lp" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=boot-enforcing-lp30f-d800-blastagator-signed.zip&type=rom_patch&version=d800_lp" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="d71c2fa46c622e138a39d59a9c258688">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=boot-enforcing-lp30f-d800-blastagator-signed.zip.md5&type=rom_patch&version=d800_lp" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "boot-enforcing-lp30f-d800-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">devnull LP Boot Image (Permissive)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=boot-permissive-lp-d800-devnull-signed.zip&type=rom_patch&version=d800_lp" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=boot-permissive-lp-d800-devnull-signed.zip&type=rom_patch&version=d800_lp" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="f04b862f62cea8e06d1ae55819499a86">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=boot-permissive-lp-d800-devnull-signed.zip.md5&type=rom_patch&version=d800_lp" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "boot-permissive-lp-d800-devnull-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-
           </tbody>
         </table>
-
-        <div id="download-notes" class="ml-1">
-          <p id="download-note-1"><strong>Note 1: </strong>This doesn't always work; your mileage may vary.</p>
-        </div>
 
       </div> <!-- Responsive Table Container -->
 

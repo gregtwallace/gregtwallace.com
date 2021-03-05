@@ -95,29 +95,14 @@
         <table class="table table-striped">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Version</th>
               <th scope="col">Mirror</th>
-              <th scope="col">MD5</th>
-              <th scope="col">Downloads</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <th scope="row">v1.0</th>
               <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=cloudy-g2-aroma.rar&type=miscellaneous&version=aroma" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=cloudy-g2-aroma.rar&type=miscellaneous&version=aroma" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="de5ca1c278cde7f4a89ac1e278f5d8ee">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=cloudy-g2-aroma.rar.md5&type=miscellaneous&version=aroma" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "cloudy-g2-aroma.rar";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
+                <a class="btn btn-sm btn-primary" href="https://u.pcloud.link/publink/show?code=kZyWSfXZWfJeKQ0wodFbu1Hsn8vIaLGLrJCk" target="_blank" role="button">pCloud</a>
               </td>
             </tr>
           </tbody>

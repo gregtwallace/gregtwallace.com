@@ -107,63 +107,14 @@
         <table class="table table-striped">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Version</th>
               <th scope="col">Mirror</th>
-              <th scope="col">MD5</th>
-              <th scope="col">Downloads</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <th scope="row">v1.2 Enforcing</th>
               <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=doriLP-selinux-enable-v1.2e-blastagator-signed.zip&type=miscellaneous&version=selinux_enable" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=doriLP-selinux-enable-v1.2e-blastagator-signed.zip&type=miscellaneous&version=selinux_enable" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="61e52c2d26b3bd53c9ef3399b4e2e93e">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=doriLP-selinux-enable-v1.2e-blastagator-signed.zip.md5&type=miscellaneous&version=selinux_enable" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "doriLP-selinux-enable-v1.2e-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">v1.2 Permissive</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=doriLP-selinux-enable-v1.2p-blastagator-signed.zip&type=miscellaneous&version=selinux_enable" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=doriLP-selinux-enable-v1.2p-blastagator-signed.zip&type=miscellaneous&version=selinux_enable" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="97c81485fd3746d488b855890311f6a3">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=doriLP-selinux-enable-v1.2p-blastagator-signed.zip.md5&type=miscellaneous&version=selinux_enable" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "doriLP-selinux-enable-v1.2p-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">v1.1</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=doriLP-selinux-enable-v1-blastagator-signed.zip&type=miscellaneous&version=selinux_enable" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=doriLP-selinux-enable-v1-blastagator-signed.zip&type=miscellaneous&version=selinux_enable" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="554f79f72496ab9e4402b2c17d03f6fa">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=doriLP-selinux-enable-v1-blastagator-signed.zip.md5&type=miscellaneous&version=selinux_enable" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "doriLP-selinux-enable-v1-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
+                <a class="btn btn-sm btn-primary" href="https://u.pcloud.link/publink/show?code=kZVPSfXZAR8LFhE8HcYxVIvGTWGUD8T5DOok" target="_blank" role="button">pCloud</a>
               </td>
             </tr>
           </tbody>

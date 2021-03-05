@@ -118,29 +118,15 @@
         <table class="table table-striped">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">ROM (Type)</th>
               <th scope="col">Mirror</th>
-              <th scope="col">MD5</th>
-              <th scope="col">Downloads</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <th scope="row">d80030b (LP) Version 1.1</th>
               <td>
-                <a class="btn btn-sm btn-primary afh-dl-link mr-1 mb-1" href="https://www.androidfilehost.com/?fid=817550096634741212" target="_blank" role="button">AFH</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=ROM-d80030b-stripped-v1.1-blastagator.zip&amp;type=rom&amp;version=my_stripped_30b" target="_blank" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="620f83aa765aa88cd155538ae293f0a0">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=ROM-d80030b-stripped-v1.1-blastagator.zip.md5&amp;type=rom&amp;version=my_stripped_30b" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "ROM-d80030b-stripped-v1.1-blastagator.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
+                <a class="btn btn-sm btn-primary" href="https://www.androidfilehost.com/?fid=817550096634741212" target="_blank" role="button">AFH</a>
+                <a class="btn btn-sm btn-primary" href="https://u.pcloud.link/publink/show?code=kZETSfXZObhWyfgnWsHd50311bnHmJM8UBby" target="_blank" role="button">pCloud</a>
               </td>
             </tr>
           </tbody>

@@ -112,33 +112,63 @@
 
 		<div class="container">
 			<h5 id="download-section">Download</h5>
-			<p class='text-danger'>Please do not repost without permission. Thank you!</p>
+      <p class="text-danger">Please do not repost without permission. Thank you!</p>
 
-			<!-- Div for PHP Page Generation of the Downloads section -->
-			<div id="download-content">
-					<?php
-					if ( isset($_GET['version']) ) {
-						$twrp_version_number=$_GET['version'];
-					}
-					else {
-						$twrp_version_number="";
-					}
-					$path = $_SERVER['DOCUMENT_ROOT']; $path .= ("/_include/scripts/lg-g2/g2-twrp/gen_download_section.php");
-					include_once($path); ?>
-			</div>
+      <!-- Responsive Display Ad - START -->
+      <div class="container mb-2">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-9849738621238699"
+             data-ad-slot="4113761759"
+             data-ad-format="auto"
+             data-full-width-responsive="true"
+             >
+        </ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <!-- Responsive Display Ad - END -->
 
-		</div>
+			<div class="table-responsive">
 
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Mirror</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <a class="btn btn-sm btn-primary" href="https://u.pcloud.link/publink/show?code=kZvYSfXZ9qk0Tc4TGkjoCFVum3sSwmoRR7yk" target="_blank" role="button">pCloud</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div> <!-- Responsive Table Container -->
+
+      <!-- Responsive Display Ad - START -->
+      <div class="container mb-2">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-9849738621238699"
+             data-ad-slot="4113761759"
+             data-ad-format="auto"
+             data-full-width-responsive="true"
+             >
+        </ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <!-- Responsive Display Ad - END -->
+
+    </div> <!-- Download Container -->
 
 		<?php $path = $_SERVER['DOCUMENT_ROOT']; $path .= "/_include/page_components/javascript.html"; include_once($path); ?>
-
-    <script src="/_include/js_public/lg-g2/g2-twrp/functions-1.0.js" type="text/javascript"></script>
-
-		<!-- Run the post-dl gen script on the initial page load -->
-		<script type="text/javascript">
-			postDownloadGen();
-		</script>
-
 		<?php $path = $_SERVER['DOCUMENT_ROOT']; $path .= "/_include/page_components/footer.html"; include_once($path); ?>
 
 	</body>

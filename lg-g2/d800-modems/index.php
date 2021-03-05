@@ -117,118 +117,16 @@
         <table class="table table-striped">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Baseband / Radio</th>
               <th scope="col">Mirror</th>
-              <th scope="col">MD5</th>
-              <th scope="col">Downloads</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <th scope="row">Stock 10d (JB)</th>
               <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-10d-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=d800-10d-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="b2067b82877a6d5b114aa50d497772be">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-10d-modem-blastagator-signed.zip.md5&type=modem&version=d800_original" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "d800-10d-modem-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
+                <a class="btn btn-sm btn-primary" href="https://u.pcloud.link/publink/show?code=kZSMSfXZUa4hMDIP8xuM93LDacROQmLboRiy" target="_blank" role="button">pCloud</a>
               </td>
             </tr>
-            <tr>
-              <th scope="row">Stock 10o (JB)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-10o-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=d800-10o-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="d54ae1084654d1221ce30ad8b125e3aa">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-10o-modem-blastagator-signed.zip.md5&type=modem&version=d800_original" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "d800-10o-modem-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Stock 20c (KK)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-20c-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=d800-20c-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="665a25ca88b934ddc72457affed4d294">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-20c-modem-blastagator-signed.zip.md5&type=modem&version=d800_original" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "d800-20c-modem-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Modeed 20c (KK) w/ 10d Radio</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-bb_20c-radio_10d-blastagator-signed.zip&type=modem&version=d800_custom" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=d800-bb_20c-radio_10d-blastagator-signed.zip&type=modem&version=d800_custom" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="ee19ea25a9904e7ab181f636c47fa144">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-bb_20c-radio_10d-blastagator-signed.zip.md5&type=modem&version=d800_custom" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "d800-bb_20c-radio_10d-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Stock 20y (KK)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-20y-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=d800-20y-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="e0bd7bd87a437e8191214c63ec02b2b0">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-20y-modem-blastagator-signed.zip.md5&type=modem&version=d800_original" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "d800-20y-modem-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Stock 30f (LP)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-30f-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=d800-30f-modem-blastagator-signed.zip&type=modem&version=d800_original" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="bc2c498923d07b81411dafcb147854b3">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=d800-30f-modem-blastagator-signed.zip.md5&type=modem&version=d800_original" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "d800-30f-modem-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-
-
           </tbody>
         </table>
 

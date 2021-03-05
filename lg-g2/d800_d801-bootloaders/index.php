@@ -117,137 +117,20 @@
         <table class="table table-striped">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Baseband / Radio</th>
               <th scope="col">Mirror</th>
-              <th scope="col">MD5</th>
-              <th scope="col">Downloads</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <th scope="row">d800 10d (JB)</th>
               <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-JB_10d-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=bootstack-d800-JB_10d-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="a7b2839f0cdd6fbfd5d6917a26541fc6">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-JB_10d-v1.1-blastagator-signed.zip.md5&type=bootloader&version=d800" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "bootstack-d800-JB_10d-v1.1-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">d800 20c (KK)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-KK_20c-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=bootstack-d800-KK_20c-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="5dfebc87b3470a0dade6c167e4d4c0f3">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-KK_20c-v1.1-blastagator-signed.zip.md5&type=bootloader&version=d800" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "bootstack-d800-KK_20c-v1.1-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">d800 20y (KK)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-KK_20y-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=bootstack-d800-KK_20y-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="ee2b9fb0e36046614699b88759c84bf0">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-KK_20y-v1.1-blastagator-signed.zip.md5&type=bootloader&version=d800" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "bootstack-d800-KK_20y-v1.1-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">d800 30f (LP) Bumped <a href="#download-note-1"><sup>Note 1</sup></a></th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-LP_30f-bump-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-lin mr-1 mb-1k" href="/_include/scripts/download/pcloud.php?file=bootstack-d800-LP_30f-bump-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="0f5281d268f437923e467648f27cce7d">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-LP_30f-bump-v1.1-blastagator-signed.zip.md5&type=bootloader&version=d800" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "bootstack-d800-LP_30f-bump-v1.1-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">d800 30f (LP) Stock <a href="#download-note-2"><sup>Note 2</sup></a></th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-LP_30f-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=bootstack-d800-LP_30f-v1.1-blastagator-signed.zip&type=bootloader&version=d800" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="cfd329dc1710fba3bb52afc1115876d2">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootstack-d800-LP_30f-v1.1-blastagator-signed.zip.md5&type=bootloader&version=d800" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "bootstack-d800-LP_30f-v1.1-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">d801 10c (JB)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootloader-d801-JB_10c-blastagator-signed.zip&type=bootloader&version=d801" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=bootloader-d801-JB_10c-blastagator-signed.zip&type=bootloader&version=d801" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="d8ac4d56bf7231afd1a7525247687682">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootloader-d801-JB_10c-blastagator-signed.zip.md5&type=bootloader&version=d801" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "bootloader-d801-JB_10c-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">d801 20e (KK)</th>
-              <td>
-                <a class="btn btn-sm btn-primary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootloader-d801-KK_20e-blastagator-signed.zip&type=bootloader&version=d801" role="button">BudgetVM</a>
-                <a class="btn btn-sm btn-primary pcloud-dl-link mr-1 mb-1" href="/_include/scripts/download/pcloud.php?file=bootloader-d801-KK_20e-blastagator-signed.zip&type=bootloader&version=d801" role="button">pCloud</a>
-              </td>
-              <td>
-                <button type="button" class="btn btn-sm btn-info mr-1 mb-1" data-toggle="popover" data-placement="top" title="" data-content="4b8a656146109cf09d7f61173f728255">Show</button>
-                <a class="btn btn-sm btn-secondary budgetvm-dl-link mr-1 mb-1" href="/_include/scripts/download/budgetvm.php?file=bootloader-d801-KK_20e-blastagator-signed.zip.md5&type=bootloader&version=d801" role="button">Download</a>
-              </td>
-              <td>
-                <?php
-                  $file_name = "bootloader-d801-KK_20e-blastagator-signed.zip";
-                  include($_SERVER['DOCUMENT_ROOT']."/_include/scripts/hit_counter/show_hits_text.php");
-                ?>
+                <a class="btn btn-sm btn-primary" href="https://u.pcloud.link/publink/show?code=kZvnSfXZzgiSfSNCTOHCOfv29nmg55JCy6hV" target="_blank" role="button">pCloud</a>
               </td>
             </tr>
           </tbody>
         </table>
 
-        <div id="download-notes" class="container ml-1">
+        <div id="download-notes" class="container">
           <p id="download-note-1" class="download-note"><strong>Note 1: </strong>To use unofficial lollipop ROM, you need modified boot stack. Bump Lollipop bootloader has lollipop partitions with KK-20y aboot.</p>
           <p id="download-note-2" class="download-note"><strong>Note 2: </strong>Do not use Stock LP if you do not know what you're doing, you will most likely brick!</p>
         </div>
