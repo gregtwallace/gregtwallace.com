@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 
 import Jumbotron from '../../components/UI/Jumbotron';
 
@@ -22,11 +21,9 @@ const DonatePage = () => {
       <div className='row'>
         <div className='col-sm-4'>
           <div className='card h-100'>
-            <Image
+            <img
               className='card-img-top'
               src='/images/donate/zelle_logo.webp'
-              width={348}
-              height={174}
             />
             <div className='card-body'>
               <h5>Zelle</h5>
@@ -39,11 +36,9 @@ const DonatePage = () => {
         </div>
         <div className='col-sm-4'>
           <div className='card h-100'>
-            <Image
+            <img
               className='card-img-top'
               src='/images/donate/venmo_logo.webp'
-              width={348}
-              height={174}
             />
             <div className='card-body'>
               <h5>Venmo</h5>
@@ -60,11 +55,9 @@ const DonatePage = () => {
         </div>
         <div className='col-sm-4'>
           <div className='card h-100'>
-            <Image
+            <img
               className='card-img-top'
               src='/images/donate/paypal_logo.webp'
-              width={348}
-              height={174}
             />
             <div className='card-body'>
               <h5>Paypal</h5>

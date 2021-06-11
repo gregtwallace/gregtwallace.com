@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Fragment } from 'react';
@@ -6,7 +5,7 @@ import { Fragment } from 'react';
 const NavbarBrand = (props) => {
   return (
     <Fragment>
-      <Image
+      <img
         src={props.image_src}
         width='40px'
         height='40px'

@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 
 import Jumbotron from '../components/UI/Jumbotron';
 
@@ -22,12 +21,10 @@ const HomePage = (props) => {
       <div className='row'>
         <div className='col-sm-4'>
           <div className='card h-100'>
-            <Image
+            <img
               className='card-img-top'
               src='/images/home/north_carolina.webp'
               alt='Photo of Greg T. Wallace standing in the mountains of North Carolina.'
-              width={348}
-              height={232}
             />
             <div className='card-body'>
               <h5>Who I Am</h5>
@@ -49,12 +46,10 @@ const HomePage = (props) => {
         </div>
         <div className='col-sm-4'>
           <div className='card h-100'>
-            <Image
+            <img
               className='card-img-top'
               src='/images/home/workstation-336369_1280.webp'
               alt='Stock photo of computer, phone, notepad, and teacup.'
-              width={348}
-              height={232}
             />
             <div className='card-body'>
               <h5>Career</h5>
@@ -75,12 +70,10 @@ const HomePage = (props) => {
         </div>
         <div className='col-sm-4'>
           <div className='card h-100'>
-            <Image
+            <img
               className='card-img-top'
               src='/images/home/jump-1209647_1280.webp'
               alt='Stock photo of a person swinging on a rope and launching into a large lake.'
-              width={348}
-              height={232}
             />
             <div className='card-body'>
               <h5>Fun</h5>
