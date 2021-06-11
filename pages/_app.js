@@ -2,8 +2,8 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 
 import Navbar from '../components/UI/Navbar/Navbar';
-import AlwaysFooter from '../components/UI/AlwaysFooter';
-import AlwaysJavascript from '../components/UI/AlwaysJavascript';
+import AlwaysFooter from '../components/UI/PageSections/AlwaysFooter';
+import AlwaysJavascript from '../components/UI/PageSections/AlwaysJavascript';
 
 const MyApp = ({ Component, pageProps }) => {
   return (

@@ -1,8 +1,8 @@
-import React from 'react';
+import { Fragment } from 'react';
 
-const MyJavascript = () => {
+const AlwaysJavascript = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <script
         src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'
         integrity='sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh'
@@ -18,8 +18,8 @@ const MyJavascript = () => {
         integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM'
         crossOrigin='anonymous'
       ></script>
-    </React.Fragment>
+    </Fragment>
   );
 };
 
-export default MyJavascript;
+export default AlwaysJavascript;
