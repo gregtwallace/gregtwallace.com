@@ -9,7 +9,7 @@ const NavbarContent = () => {
       <ul className='navbar-nav mr-auto'>
         <NavItem href='/'>Home</NavItem>
 
-        <NavDropdown name='LG G2'>
+        <NavDropdown name='LG G2' hrefParent='/lg-g2'>
           <NavDropItem href='/lg-g2/g2-twrp'>
             TWRP w/ Thermal Control and F2FS
           </NavDropItem>
@@ -37,7 +37,7 @@ const NavbarContent = () => {
           <NavDropItem href='/lg-g2/aroma-binaries'>AROMA Binaries</NavDropItem>
         </NavDropdown>
 
-        <NavDropdown name='Misc. Projects'>
+        <NavDropdown name='Misc. Projects' hrefParent='/portfolio'>
           <NavDropItem href='/portfolio/tic-tac-toe'>Tic-Tac-Toe</NavDropItem>
         </NavDropdown>
 

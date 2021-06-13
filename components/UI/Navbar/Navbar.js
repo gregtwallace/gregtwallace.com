@@ -1,15 +1,8 @@
-// import { useRouter } from 'next/router';
-
-
 import NavbarBrand from './NavbarBrand';
 import NavbarToggle from './NavbarToggle';
 import NavbarContent from './NavbarContent/NavbarContent';
 
 const Navbar = () => {
-  // const router = useRouter();
-
-  // console.log(router.pathname);
-
   return (
     <div className='container mb-2'>
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
