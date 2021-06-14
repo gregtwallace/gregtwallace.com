@@ -5,6 +5,7 @@ import Jumbotron from '../../components/UI/Jumbotron';
 import Row from '../../components/UI/Layout/Row';
 import ColumnThird from '../../components/UI/Layout/ColumnThird';
 import Card from '../../components/UI/Layout/Card';
+import Button from '../../components/UI/Button';
 
 const DonatePage = () => {
   return (
@@ -44,13 +45,12 @@ const DonatePage = () => {
             title='Venmo'
           >
             <p>No fees.</p>
-            <a
+            <Button
               href='https://venmo.com/gtwallace'
-              className='btn btn-primary'
               target='_blank'
             >
               Venmo Me
-            </a>
+            </Button>
           </Card>
         </ColumnThird>
 
@@ -61,13 +61,12 @@ const DonatePage = () => {
             title='PayPal'
           >
             <p>They steal part of the money, but I'll still be very grateful!</p>
-            <a
+            <Button
               href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=44ZHKU4BWDUKN'
-              className='btn btn-primary'
               target='_blank'
             >
               PayPal Me
-            </a>
+            </Button>
           </Card>
         </ColumnThird>
       </Row>
