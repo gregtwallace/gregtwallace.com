@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Jumbotron from '../../components/UI/Jumbotron';
 import Row from '../../components/UI/Layout/Row';
 import ColumnThird from '../../components/UI/Layout/ColumnThird';
-import CardWithImage from '../../components/UI/Layout/CardWithImage';
+import Card from '../../components/UI/Layout/Card';
 
 const DonatePage = () => {
   return (
@@ -25,7 +25,7 @@ const DonatePage = () => {
 
       <Row>
         <ColumnThird>
-          <CardWithImage
+          <Card
             imageSrc='/images/donate/zelle_logo.webp'
             imageAlt='Zelle logo.'
             title='Zelle'
@@ -34,11 +34,11 @@ const DonatePage = () => {
             <p>
               <strong>Send via Zelle App to:</strong> greg@gregtwallace.com
             </p>
-          </CardWithImage>
+          </Card>
         </ColumnThird>
 
         <ColumnThird>
-          <CardWithImage
+          <Card
             imageSrc='/images/donate/venmo_logo.webp'
             imageAlt='Venmo logo.'
             title='Venmo'
@@ -51,11 +51,11 @@ const DonatePage = () => {
             >
               Venmo Me
             </a>
-          </CardWithImage>
+          </Card>
         </ColumnThird>
 
         <ColumnThird>
-          <CardWithImage
+          <Card
             imageSrc='/images/donate/paypal_logo.webp'
             imageAlt='PayPal logo.'
             title='PayPal'
@@ -68,7 +68,7 @@ const DonatePage = () => {
             >
               PayPal Me
             </a>
-          </CardWithImage>
+          </Card>
         </ColumnThird>
       </Row>
     </Fragment>

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Jumbotron from '../components/UI/Jumbotron';
 import Row from '../components/UI/Layout/Row';
 import ColumnThird from '../components/UI/Layout/ColumnThird';
-import CardWithImage from '../components/UI/Layout/CardWithImage';
+import Card from '../components/UI/Layout/Card';
 
 const HomePage = (props) => {
   return (
@@ -24,7 +24,7 @@ const HomePage = (props) => {
 
       <Row>
         <ColumnThird>
-          <CardWithImage
+          <Card
             imageSrc='/images/home/north_carolina.webp'
             imageAlt='Photo of Greg T. Wallace standing in the mountains of North Carolina.'
             title='Who I Am'
@@ -42,10 +42,10 @@ const HomePage = (props) => {
               I practiced law for a little over three years before starting my
               career in IT.
             </p>
-          </CardWithImage>
+          </Card>
         </ColumnThird>
         <ColumnThird>
-          <CardWithImage
+          <Card
             imageSrc='/images/home/workstation-336369_1280.webp'
             imageAlt='Stock photo of computer, phone, notepad, and teacup.'
             title='Career'
@@ -62,10 +62,10 @@ const HomePage = (props) => {
               Florida. I also manage two teams within IT (a hardware team and a
               purchasing team).
             </p>
-          </CardWithImage>
+          </Card>
         </ColumnThird>
         <ColumnThird>
-          <CardWithImage
+          <Card
             imageSrc='/images/home/jump-1209647_1280.webp'
             imageAlt='Stock photo of a person swinging on a rope and launching into a large lake.'
             title='Fun'
@@ -83,7 +83,7 @@ const HomePage = (props) => {
               I also compile TWRP and piece together other Android projects for
               LG and other Android mobile phones.
             </p>
-          </CardWithImage>
+          </Card>
         </ColumnThird>
       </Row>
     </Fragment>
