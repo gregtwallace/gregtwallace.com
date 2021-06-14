@@ -3,7 +3,8 @@ import Head from 'next/head';
 
 import Navbar from '../components/UI/Navbar/Navbar';
 import AlwaysFooter from '../components/UI/PageSections/AlwaysFooter';
-import AlwaysJavascript from '../components/UI/PageSections/AlwaysJavascript';
+
+import Container from 'react-bootstrap/Container';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -30,21 +31,20 @@ const MyApp = ({ Component, pageProps }) => {
 
         <link
           rel='stylesheet'
-          href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'
-          integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T'
+          href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css'
+          integrity='sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=='
           crossOrigin='anonymous'
         />
       </Head>
 
-      <div className='container'>
+      <Container>
         <Navbar />
 
         <Component {...pageProps} />
 
         <AlwaysFooter />
-      </div>
+      </Container>
 
-      <AlwaysJavascript />
     </Fragment>
   );
 };
