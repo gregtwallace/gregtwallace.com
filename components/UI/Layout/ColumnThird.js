@@ -1,6 +1,6 @@
 const Row = (props) => {
   return (
-    <div className='col-sm-4'>
+    <div className='col-sm-4 px-1'>
       {props.children}
     </div>
   );

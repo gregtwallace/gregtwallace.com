@@ -36,14 +36,15 @@ const MyApp = ({ Component, pageProps }) => {
         />
       </Head>
 
-      <Navbar />
-
       <div className='container'>
+        <Navbar />
+
         <Component {...pageProps} />
+
+        <AlwaysFooter />
       </div>
 
       <AlwaysJavascript />
-      <AlwaysFooter />
     </Fragment>
   );
 };

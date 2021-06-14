@@ -1,7 +1,7 @@
 const AlwaysFooter = () => {
   return (
-    <footer className='container'>
-      <div className='text-center py-3'>
+    <footer className='mt-5'>
+      <div className='text-center'>
         <hr />
         <p>© 2019-21 Greg T. Wallace</p>
         <a
