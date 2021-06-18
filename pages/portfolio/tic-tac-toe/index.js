@@ -31,7 +31,7 @@ const TicTacToePage = (props) => {
         <p>A basic implmentation of Tic-Tac-Toe that I wrote in javascript.</p>
         <canvas id='gameboard' className='m-0 p-0'></canvas>
         <h2 id='gamestatus'></h2>
-        <Button id='restart-button' className='btn btn-primary'>
+        <Button id='restart-button' color='primary'>
           Restart Game
         </Button>
       </div>

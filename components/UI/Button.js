@@ -9,13 +9,14 @@ const Button = (props) => {
   // update class names
   let buttonProps = {
     ...props,
-    className: buttonClasses
+    className: `${buttonClasses}${props.className ? ' ' + props.className : ''}`
   }
-  // remove children from being passed as properties to the rendered element
+  // remove children and color from being passed as properties to the rendered element
   delete buttonProps.children;
+  delete buttonProps.color;
 
   // return a link if using a button as a link
-  if (props.href) {
+  if (buttonProps.href) {
     return (
       <a {...buttonProps}>
         {props.children}
