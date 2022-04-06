@@ -37,7 +37,7 @@ const NavbarContent = () => {
           <NavDropItem href='/lg-g2/aroma-binaries'>AROMA Binaries</NavDropItem>
         </NavDropdown>
 
-        <NavDropdown name='Misc. Projects' hrefParent='/portfolio'>
+        <NavDropdown name='Misc.' hrefParent='/portfolio'>
           <NavDropItem href='/portfolio/tic-tac-toe'>Tic-Tac-Toe</NavDropItem>
         </NavDropdown>
 

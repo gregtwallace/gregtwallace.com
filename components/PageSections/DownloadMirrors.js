@@ -1,7 +1,7 @@
-import Row from '../Layout/Row';
-import ColumnWhole from '../Layout/ColumnWhole';
-import Card from '../Layout/Card';
-import Button from '../Button';
+import Row from '../UI/Layout/Row';
+import ColumnWhole from '../UI/Layout/ColumnWhole';
+import Card from '../UI/Layout/Card';
+import Button from '../UI/Button';
 
 const DownloadMirrors = (props) => {
   return (

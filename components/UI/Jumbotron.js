@@ -2,7 +2,7 @@ import Button from './Button';
 
 const Jumbotron = (props) => {
   let renderHr = false;
-  if (props.paragraph || props.button1 || props.button2) {
+  if (props.paragraph || props.paragraph2 || props.button1 || props.button2) {
     renderHr = true;
   }
 
@@ -12,6 +12,7 @@ const Jumbotron = (props) => {
       <p className='lead'>{props.lead}</p>
       {renderHr && <hr className='my-4'></hr>}
       {props.paragraph && <p className='text'>{props.paragraph}</p>}
+      {props.paragraph2 && <p className='text-danger'>{props.paragraph2}</p>}
       {props.button1 && (
         <Button
           className='mr-2'

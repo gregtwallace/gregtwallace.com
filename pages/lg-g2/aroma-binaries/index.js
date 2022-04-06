@@ -5,11 +5,10 @@ import Jumbotron from '../../../components/UI/Jumbotron';
 import Row from '../../../components/UI/Layout/Row';
 import ColumnHalf from '../../../components/UI/Layout/ColumnHalf';
 import Card from '../../../components/UI/Layout/Card';
-import Button from '../../../components/UI/Button';
-import DownloadMirrors from '../../../components/UI/PageSections/DownloadMirrors';
+import DownloadMirrors from '../../../components/PageSections/DownloadMirrors';
 
-import GoogleAdsHead from '../../../components/UI/PageSections/GoogleAdsHead';
-import GoogleAd from '../../../components/UI/PageSections/GoogleAd';
+import GoogleAdsHead from '../../../components/PageSections/GoogleAdsHead';
+import GoogleAd from '../../../components/PageSections/GoogleAd';
 
 const fileMirrors = [
   {
@@ -18,11 +17,11 @@ const fileMirrors = [
   },
 ];
 
-const G2Aroma = () => {
+const G2AromaPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Greg T. Wallace</title>
+        <title>AROMA - Greg T. Wallace</title>
         <meta
           name='description'
           content='AROMA provides a graphical interface for Android recovery install zips.'
@@ -61,7 +60,7 @@ const G2Aroma = () => {
               If your chosen zip file ["your zip"] has AROMA and it does not
               work, you need to replace a couple of binary files in your zip.
             </p>
-            <ol class='list-group ml-3'>
+            <ol className='list-group ml-3'>
               <li>Download the AROMA Binary zip ["my zip"].</li>
               <li>Open ["your zip"] file.</li>
               <li>
@@ -87,4 +86,4 @@ const G2Aroma = () => {
   );
 };
 
-export default G2Aroma;
+export default G2AromaPage;

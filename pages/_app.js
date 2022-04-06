@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import Navbar from '../components/UI/Navbar/Navbar';
-import AlwaysFooter from '../components/UI/PageSections/AlwaysFooter';
-import AlwaysJavascript from '../components/UI/PageSections/AlwaysJavascript';
+import Navbar from '../components/PageSections/Navbar/Navbar'
+import AlwaysFooter from '../components/PageSections/AlwaysFooter';
+import AlwaysJavascript from '../components/PageSections/AlwaysJavascript';
 
 import './app.css'; 
 
