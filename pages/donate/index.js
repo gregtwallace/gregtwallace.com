@@ -19,11 +19,11 @@ const DonatePage = () => {
         />
       </Head>
 
-      <Jumbotron title='Donate'>
-        Help cover the costs of hosting this site, or just buy me a beer to say
-        thanks.
-      </Jumbotron>
-
+      <Jumbotron
+        title='Donate' 
+        lead='Help cover the costs of hosting this site, or just buy me a beer to say thanks.'
+        />
+      
       <Row>
         <ColumnThird>
           <Card

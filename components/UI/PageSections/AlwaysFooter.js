@@ -3,7 +3,7 @@ const AlwaysFooter = () => {
     <footer className='mt-5'>
       <div className='text-center'>
         <hr />
-        <p>© 2019-21 Greg T. Wallace</p>
+        <p>© 2019-22 Greg T. Wallace</p>
         <a
           href='https://policies.google.com/technologies/partner-sites'
           target='_blank'

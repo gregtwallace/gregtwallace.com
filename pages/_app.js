@@ -5,6 +5,8 @@ import Navbar from '../components/UI/Navbar/Navbar';
 import AlwaysFooter from '../components/UI/PageSections/AlwaysFooter';
 import AlwaysJavascript from '../components/UI/PageSections/AlwaysJavascript';
 
+import './app.css'; 
+
 const MyApp = ({ Component, pageProps }) => {
   return (
     <Fragment>
@@ -28,6 +30,7 @@ const MyApp = ({ Component, pageProps }) => {
         />
         <meta property='og:url' content='https://www.gregtwallace.com/' />
 
+        {/* TODO: custom css? */}
         <link
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'

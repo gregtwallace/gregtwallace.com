@@ -1,4 +1,4 @@
-const Row = (props) => {
+const ColumnThird = (props) => {
   return (
     <div className='col-sm-4 px-1'>
       {props.children}
@@ -6,4 +6,4 @@ const Row = (props) => {
   );
 };
 
-export default Row;
+export default ColumnThird;
