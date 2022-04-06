@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+Allow: /images/
+Allow: /javascript/
+Sitemap: https://www.gregtwallace.com/sitemap.xml

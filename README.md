@@ -1,7 +1,9 @@
 Code for my website www.gregtwallace.com
+
 (Rebuilt with Next.js)
 
-All code copyright Greg T. Wallace, 2019-21
+
+All code copyright Greg T. Wallace, 2019-22
 
 
 --------------

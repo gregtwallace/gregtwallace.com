@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://www.gregtwallace.com/</loc>
+  </url>
+  <url>
+    <loc>https://www.gregtwallace.com/lg-g2/g2-twrp/</loc>
+  </url>
+  <url>
+    <loc>https://www.gregtwallace.com/lg-g2/d800-rom-patch/</loc>
+  </url>
+  <url>
+    <loc>https://www.gregtwallace.com/lg-g2/dorimanx-selinux/</loc>
+  </url>
+  <url>
+    <loc>https://www.gregtwallace.com/lg-g2/d800_d801-bootloaders/</loc>
+  </url>
+  <url>
+    <loc>https://www.gregtwallace.com/lg-g2/aroma-binaries/</loc>
+  </url>
+  <url>
+    <loc>https://www.gregtwallace.com/lg-g2/d80230b-rom/</loc>
+  </url>
+  <url>
+    <loc>https://www.gregtwallace.com/lg-g2/d800-modems/</loc>
+  </url>
+  <url>
+    <loc>https://www.gregtwallace.com/portfolio/tic-tac-toe/</loc>
+  </url>
+  <url>
+    <loc>https://www.gregtwallace.com/donate/</loc>
+  </url>
+</urlset>
