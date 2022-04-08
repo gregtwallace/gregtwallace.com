@@ -17,7 +17,7 @@ const TicTacToePage = (props) => {
   return (
     <Fragment>
       <Head>
-        <title>Tic-Tac-Toe</title>
+        <title>Tic-Tac-Toe - Greg T. Wallace</title>
         <meta
           name='description'
           content='A javascript implementation of Tic-Tac-Toe.'
