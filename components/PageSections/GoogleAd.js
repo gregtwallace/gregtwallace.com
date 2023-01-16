@@ -2,9 +2,12 @@ import { React, useEffect } from 'react';
 
 const GoogleAd = () => {
   useEffect(() => {
-    window.adsbygoogle = window.adsbygoogle || [];
-    window.adsbygoogle.push({});
-  });
+    try {
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.log('failed to push ad: ', e);
+    }
+  }, []);
 
   return (
     <div className='container mb-2'>
