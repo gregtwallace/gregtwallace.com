@@ -9,6 +9,13 @@ const NavbarContent = () => {
       <ul className='navbar-nav mr-auto'>
         <NavItem href='/'>Home</NavItem>
 
+        <NavItem
+          href='https://www.legocerthub.com'
+          target='_blank'
+        >
+          LeGo CertHub
+        </NavItem>
+
         <NavDropdown name='LG G2' hrefParent='/lg-g2'>
           <NavDropItem href='/lg-g2/g2-twrp'>
             TWRP w/ Thermal Control and F2FS
