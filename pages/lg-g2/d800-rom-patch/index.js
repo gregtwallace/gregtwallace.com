@@ -61,7 +61,7 @@ const ROMPatchPage = () => {
               just fine.
             </p>
             <p>
-              I took the basic idea from @dev>null (
+              I took the basic idea from @dev&gt;null (
               <a
                 href='http://forum.xda-developers.com/showpost.php?p=60712439&postcount=553'
                 target='_blank'
@@ -70,7 +70,7 @@ const ROMPatchPage = () => {
               </a>
               ) I had previously dumped all of our stock, d80030f partitions. I
               took those dumps and combined them with the basic gist of this
-              other patch dev>null made.
+              other patch dev&gt;null made.
             </p>
           </Card>
         </ColumnHalf>
