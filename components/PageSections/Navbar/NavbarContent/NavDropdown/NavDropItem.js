@@ -6,13 +6,12 @@ const NavDropItem = (props) => {
   const isActive = router.pathname === props.href;
 
   return (
-    <Link href={props.href}>
-      <a
-        className={`dropdown-item ${isActive ? 'active' : ''}`}
-        target={props.target}
-      >
-        {props.children}
-      </a>
+    <Link
+      href={props.href}
+      className={`dropdown-item ${isActive ? 'active' : ''}`}
+      target={props.target}
+    >
+      {props.children}
     </Link>
   );
 };

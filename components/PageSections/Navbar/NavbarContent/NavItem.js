@@ -7,13 +7,12 @@ const NavItem = (props) => {
 
   return (
     <li className='nav-item'>
-      <Link href={props.href}>
-        <a
-          className={`nav-link ${isActive ? 'active' : ''}`}
-          target={props.target}
-        >
-          {props.children}
-        </a>
+      <Link
+        href={props.href}
+        className={`nav-link ${isActive ? 'active' : ''}`}
+        target={props.target}
+      >
+        {props.children}
       </Link>
     </li>
   );

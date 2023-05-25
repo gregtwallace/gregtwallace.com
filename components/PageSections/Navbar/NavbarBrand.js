@@ -11,8 +11,8 @@ const NavbarBrand = (props) => {
         height='40px'
         alt={props.image_alt}
       />
-      <Link href='/'>
-        <a className='navbar-brand ml-2'>{props.children}</a>
+      <Link href='/' className='navbar-brand ml-2'>
+        {props.children}
       </Link>
     </Fragment>
   );
