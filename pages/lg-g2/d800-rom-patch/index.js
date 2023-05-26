@@ -7,7 +7,6 @@ import ColumnHalf from '../../../components/UI/Layout/ColumnHalf';
 import Card from '../../../components/UI/Layout/Card';
 import DownloadMirrors from '../../../components/PageSections/DownloadMirrors';
 
-import GoogleAdsHead from '../../../components/Ads/GoogleAdsHead';
 import GoogleAd from '../../../components/Ads/GoogleAd';
 
 const fileMirrors = [
@@ -27,8 +26,6 @@ const ROMPatchPage = () => {
           content='Most LG G2 stock ROMs can be converted to d800 ROMs. This replaces the necessary
           files to convert non-d800 ROMs to d800 ROMs.'
         />
-
-        <GoogleAdsHead />
       </Head>
 
       <Jumbotron

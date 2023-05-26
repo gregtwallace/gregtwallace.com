@@ -7,7 +7,6 @@ import ColumnHalf from '../../../components/UI/Layout/ColumnHalf';
 import Card from '../../../components/UI/Layout/Card';
 import DownloadMirrors from '../../../components/PageSections/DownloadMirrors';
 
-import GoogleAdsHead from '../../../components/Ads/GoogleAdsHead';
 import GoogleAd from '../../../components/Ads/GoogleAd';
 
 const fileMirrors = [
@@ -28,7 +27,6 @@ const DorimanxSELinuxPage = () => {
           is disabled. This re-enables SELinux.'
         />
 
-        <GoogleAdsHead />
       </Head>
 
       <Jumbotron

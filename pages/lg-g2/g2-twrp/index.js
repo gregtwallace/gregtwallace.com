@@ -7,7 +7,6 @@ import ColumnHalf from '../../../components/UI/Layout/ColumnHalf';
 import Card from '../../../components/UI/Layout/Card';
 import DownloadMirrors from '../../../components/PageSections/DownloadMirrors';
 
-import GoogleAdsHead from '../../../components/Ads/GoogleAdsHead';
 import GoogleAd from '../../../components/Ads/GoogleAd';
 
 const fileMirrors = [
@@ -26,8 +25,6 @@ const G2TwrpPage = () => {
           name='description'
           content='TWRP custom recovery built for all LG G2 models.'
         />
-
-        <GoogleAdsHead />
       </Head>
 
       <Jumbotron
@@ -63,8 +60,8 @@ const G2TwrpPage = () => {
           <Card title='Features'>
             <ul className='list-group ml-3'>
               <li>
-                <span className='text-success'>Added: </span>Modified cm-14.1 kernel
-                with thermal and other changes. (as of 3.1.0-0)
+                <span className='text-success'>Added: </span>Modified cm-14.1
+                kernel with thermal and other changes. (as of 3.1.0-0)
               </li>
               <li>
                 <span className='text-success'>Added: </span>Full F2FS support,
@@ -75,8 +72,8 @@ const G2TwrpPage = () => {
                 enabled, you will not be able to change partition type.
               </li>
               <li>
-                <span className='text-success'>Added: </span>Proper support for f320
-                & lgl22 External SD Card.
+                <span className='text-success'>Added: </span>Proper support for
+                f320 & lgl22 External SD Card.
               </li>
               <li>
                 <span className='text-success'>Added: </span>Tap to wake.

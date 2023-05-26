@@ -7,7 +7,6 @@ import ColumnHalf from '../../../components/UI/Layout/ColumnHalf';
 import Card from '../../../components/UI/Layout/Card';
 import DownloadMirrors from '../../../components/PageSections/DownloadMirrors';
 
-import GoogleAdsHead from '../../../components/Ads/GoogleAdsHead';
 import GoogleAd from '../../../components/Ads/GoogleAd';
 
 const fileMirrors = [
@@ -31,8 +30,6 @@ const StrippedROMPage = () => {
           content='This is the stock LG G2 d802 lollipop (30b) ROM converted to d800 with unnecessary components removed
           (i.e. de-bloated).'
         />
-
-        <GoogleAdsHead />
       </Head>
 
       <Jumbotron

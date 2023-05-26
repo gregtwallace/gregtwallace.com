@@ -7,7 +7,6 @@ import ColumnHalf from '../../../components/UI/Layout/ColumnHalf';
 import Card from '../../../components/UI/Layout/Card';
 import DownloadMirrors from '../../../components/PageSections/DownloadMirrors';
 
-import GoogleAdsHead from '../../../components/Ads/GoogleAdsHead';
 import GoogleAd from '../../../components/Ads/GoogleAd';
 
 const fileMirrors = [
@@ -26,8 +25,6 @@ const G2AromaPage = () => {
           name='description'
           content='AROMA provides a graphical interface for Android recovery install zips.'
         />
-
-        <GoogleAdsHead />
       </Head>
 
       <Jumbotron

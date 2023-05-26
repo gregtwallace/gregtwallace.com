@@ -1,11 +1,12 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import Navbar from '../components/PageSections/Navbar/Navbar'
+import GoogleAdsHead from '../components/Ads/GoogleAdsHead';
+import Navbar from '../components/PageSections/Navbar/Navbar';
 import AlwaysFooter from '../components/PageSections/AlwaysFooter';
 import AlwaysJavascript from '../components/PageSections/AlwaysJavascript';
 
-import './app.css'; 
+import './app.css';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -38,6 +39,8 @@ const MyApp = ({ Component, pageProps }) => {
           crossOrigin='anonymous'
         />
       </Head>
+
+      <GoogleAdsHead />
 
       <div className='container'>
         <Navbar />
