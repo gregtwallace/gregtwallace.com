@@ -10,10 +10,10 @@ const NavbarContent = () => {
         <NavItem href='/'>Home</NavItem>
 
         <NavItem
-          href='https://www.legocerthub.com'
+          href='https://www.certwarden.com'
           target='_blank'
         >
-          LeGo CertHub
+          Cert Warden
         </NavItem>
 
         <NavDropdown name='LG G2' hrefParent='/lg-g2'>
